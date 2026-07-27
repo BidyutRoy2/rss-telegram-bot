@@ -60,7 +60,7 @@ async def main():
                 pass
 
             # হাইপারলিঙ্ক ফরম্যাটে ক্যাপশন
-            caption = f"<a href='{link}'>{title}</a>"
+          caption = f"<a href='{link}'>{title}</a>\n\n<b>Subscribe - @hiddengemnews</b>"
 
             try:
                 if image_url:
