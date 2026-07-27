@@ -86,6 +86,8 @@ caption = (
                     text=caption,
                     parse_mode="HTML"
                 )
-
-if __name__ == "__main__":
-    asyncio.run(main())
+            print(f"Posted: {title}")
+            new_posted.append(link)
+            await asyncio.sleep(2)
+        except Exception as e:
+            print(f"Error posting {title}: {e}")
