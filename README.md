@@ -75,3 +75,6 @@ RSS_FEEDS = [
     "[https://decrypt.co/feed](https://decrypt.co/feed)",
     "[https://bitcoinmagazine.com/feed](https://bitcoinmagazine.com/feed)"
 ]
+
+## ⚠️ Note on Attribution
+If you are forking or using this repository, please keep the original credit link (`@hiddengemnews`) intact to support the open-source creator!
