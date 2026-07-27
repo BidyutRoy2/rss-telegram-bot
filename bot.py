@@ -46,7 +46,7 @@ async def main():
 
     for feed_url in RSS_FEEDS:
         feed = feedparser.parse(feed_url)
-        # সবচেয়ে পুরনোটি আগে পোস্ট করার জন্য রিভার্স
+        # সবচেয়ে পুরনোটি আগে পোস্ট করার জন্য রিভার্স
         for entry in reversed(feed.entries[:5]):
             link = entry.link
             if link in new_posted:
@@ -66,7 +66,7 @@ async def main():
                 pass
 
             # হাইপারলিঙ্ক ফরম্যাটে ক্যাপশন
-          caption = f"<a href='{link}'>{title}</a>\n\n<b>Subscribe - @hiddengemnews</b>"
+            caption = f"<a href='{link}'>{title}</a>\n\n<b>Subscribe - @hiddengemnews</b>"
 
             try:
                 if image_url:
@@ -84,7 +84,7 @@ async def main():
                     )
                 print(f"Posted: {title}")
                 new_posted.append(link)
-                await asyncio.sleep(2)  # লিমিট এড়াতে ছোট বিরতি
+                await asyncio.sleep(2)  # লিমিট এড়াতে ছোট বিরতি
             except Exception as e:
                 print(f"Error posting {link}: {e}")
 
