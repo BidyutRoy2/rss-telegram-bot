@@ -33,10 +33,7 @@ jobs:
         run: python bot.py
 
       - name: Commit & Push updated posted.json
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
-          git add posted.json
-          git diff-index --quiet HEAD || git commit -m "Update posted history"
-          git push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update posted history
+          file_pattern: 'posted.json'
