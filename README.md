@@ -71,9 +71,17 @@ To change news sources, open `bot.py` and modify the `RSS_FEEDS` list:
 
 ```python
 RSS_FEEDS = [
-    "[https://cointelegraph.com/rss](https://cointelegraph.com/rss)",
-    "[https://decrypt.co/feed](https://decrypt.co/feed)",
-    "[https://bitcoinmagazine.com/feed](https://bitcoinmagazine.com/feed)"
+    # Top Crypto & Market News
+    "https://cointelegraph.com/rss",
+    "https://decrypt.co/feed",
+    "https://bitcoinmagazine.com/feed",
+    "https://cryptoslate.com/feed/",
+    "https://www.coindesk.com/arc/outboundfeeds/rss/",
+    
+    # Altcoin & On-Chain Analysis
+    "https://beincrypto.com/feed/",
+    "https://news.bitcoin.com/feed/",
+    "https://blockworks.co/feed"
 ]
 ```
 ## ⚠️ Note on Attribution
