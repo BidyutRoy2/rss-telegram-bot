@@ -12,11 +12,17 @@ POSTED_FILE = "posted.json"
 
 # আপনি যেসব RSS ফিড চালাতে চান তার লিস্ট
 RSS_FEEDS = [
+    # Top Crypto & Market News
     "https://cointelegraph.com/rss",
     "https://decrypt.co/feed",
     "https://bitcoinmagazine.com/feed",
+    "https://cryptoslate.com/feed/",
     "https://www.coindesk.com/arc/outboundfeeds/rss/",
-    "https://cryptoslate.com/feed/"
+    
+    # Altcoin & On-Chain Analysis
+    "https://beincrypto.com/feed/",
+    "https://news.bitcoin.com/feed/",
+    "https://blockworks.co/feed"
 ]
 
 def load_posted():
