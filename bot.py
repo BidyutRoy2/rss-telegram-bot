@@ -67,31 +67,25 @@ async def main():
 
             # হাইপারলিঙ্ক ফরম্যাটে ক্যাপশন
 caption = (
-    f"<a href='{link}'>{title}</a>\n\n"
-    f"<b>Subscribe - @hiddengemnews</b>\n"
-    f"<i>Powered by Hidden Gem</i>"
-)
-            try:
-                if image_url:
-                    await bot.send_photo(
-                        chat_id=CHANNEL_ID,
-                        photo=image_url,
-                        caption=caption,
-                        parse_mode="HTML"
-                    )
-                else:
-                    await bot.send_message(
-                        chat_id=CHANNEL_ID,
-                        text=caption,
-                        parse_mode="HTML"
-                    )
-                print(f"Posted: {title}")
-                new_posted.append(link)
-                await asyncio.sleep(2)  # লিমিট এড়াতে ছোট বিরতি
-            except Exception as e:
-                print(f"Error posting {link}: {e}")
+            f"<a href='{link}'>{title}</a>\n\n"
+            f"<b>Subscribe - @hiddengemnews</b>\n"
+            f"<i>Powered by Hidden Gem</i>"
+        )
 
-    save_posted(new_posted)
+        try:
+            if image_url:
+                await bot.send_photo(
+                    chat_id=CHANNEL_ID,
+                    photo=image_url,
+                    caption=caption,
+                    parse_mode="HTML"
+                )
+            else:
+                await bot.send_message(
+                    chat_id=CHANNEL_ID,
+                    text=caption,
+                    parse_mode="HTML"
+                )
 
 if __name__ == "__main__":
     asyncio.run(main())
