@@ -2,8 +2,8 @@ name: RSS Telegram Feeder
 
 on:
   schedule:
-    - cron: '*/10 * * * *'  # প্রতি 10 মিনিট পর পর চলবে
-  workflow_dispatch:        # ম্যানুয়ালি রান করার অপশন
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
 
 jobs:
   build-and-run:
@@ -36,6 +36,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
           git add posted.json
           git diff-index --quiet HEAD || git commit -m "Update posted history"
           git push
