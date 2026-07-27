@@ -66,8 +66,11 @@ async def main():
                 pass
 
             # হাইপারলিঙ্ক ফরম্যাটে ক্যাপশন
-            caption = f"<a href='{link}'>{title}</a>\n\n<b>Subscribe - @hiddengemnews</b>"
-
+            caption = (
+    f"<a href='{link}'>{title}</a>\n\n"
+    f"<b>Subscribe - @hiddengemnews</b>\n"
+    f"<i>Powered by Hidden Gem</i>"
+)
             try:
                 if image_url:
                     await bot.send_photo(
