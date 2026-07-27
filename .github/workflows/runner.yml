@@ -2,7 +2,7 @@ name: RSS Telegram Feeder
 
 on:
   schedule:
-    - cron: '*/10 * * * *'  # প্রতি ১০ মিনিট পর পর চলবে
+    - cron: '*/30 * * * *'  # প্রতি 30 মিনিট পর পর চলবে
   workflow_dispatch:        # ম্যানুয়ালি রান করার অপশন
 
 jobs:
