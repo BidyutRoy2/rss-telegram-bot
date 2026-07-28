@@ -1,3 +1,10 @@
+<p align="center">
+  <img src="https://img.shields.io/github/stars/BidyutRoy2/rss-telegram-bot?style=for-the-badge&color=gold" />
+  <img src="https://img.shields.io/github/forks/BidyutRoy2/rss-telegram-bot?style=for-the-badge&color=blue" />
+  <img src="https://img.shields.io/github/license/BidyutRoy2/rss-telegram-bot?style=for-the-badge&color=green" />
+  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+</p>
+
 # 🚀 RSS Telegram Auto-News Poster Bot
 
 An automated Python-based Telegram bot that fetches the latest news from top Crypto, Market, and On-Chain RSS feeds and posts them directly to your Telegram Channel with custom cover images and hyperlinks.
